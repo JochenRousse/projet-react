@@ -19,7 +19,6 @@ export default class MovieMap extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.mymap.leafletElement.invalidateSize(true))
         setTimeout(() => this.mymap.leafletElement.invalidateSize(true), 250)
     }
 

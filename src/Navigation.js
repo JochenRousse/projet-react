@@ -18,12 +18,12 @@ export class Navigation extends React.Component {
 
     render() {
         return (
-            <Tabs fill defaultActiveKey="chapitres" id="navigationTab">
-                <Tab eventKey="chapitres" title="Chapitres">
-                    <List chapters={this.props.data.Chapters} onClick={this.handleClick.bind(this)}/>
-                </Tab>
+            <Tabs fill defaultActiveKey="carte" id="navigationTab">
                 <Tab eventKey="carte" title="Carte">
                     <MovieMap waypoints={this.props.data.Waypoints} onClick={this.handleClick.bind(this)}/>
+                </Tab>
+                <Tab eventKey="chapitres" title="Chapitres">
+                    <List chapters={this.props.data.Chapters} onClick={this.handleClick.bind(this)}/>
                 </Tab>
                 <Tab eventKey="mots" title="Mots clés">
                 </Tab>
