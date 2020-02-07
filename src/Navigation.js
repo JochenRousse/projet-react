@@ -23,7 +23,7 @@ export class Navigation extends React.Component {
                     <List chapters={this.props.data.Chapters} onClick={this.handleClick.bind(this)}/>
                 </Tab>
                 <Tab eventKey="carte" title="Carte">
-                    <MovieMap/>
+                    <MovieMap waypoints={this.props.data.Waypoints} onClick={this.handleClick.bind(this)}/>
                 </Tab>
                 <Tab eventKey="mots" title="Mots clés">
                 </Tab>

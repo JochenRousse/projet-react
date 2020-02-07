@@ -6,7 +6,7 @@ export default class MovieMap extends React.Component {
     state = {
         lat: 38,
         lng: -97,
-        zoom: 13,
+        zoom: 2,
     };
 
     static propTypes = {
@@ -18,11 +18,18 @@ export default class MovieMap extends React.Component {
         this.props.onClick(pos);
     }
 
+    componentDidMount() {
+        console.log(this.mymap.leafletElement.invalidateSize(true))
+        setTimeout(() => this.mymap.leafletElement.invalidateSize(true), 250)
+    }
+
     render() {
         const position = [this.state.lat, this.state.lng];
         return (
             <div className="pt-3 pb-3">
-                <Map center={position} zoom={this.state.zoom} style={{height: '350px'}}>
+                <Map center={position} zoom={this.state.zoom} style={{height: '350px', widht: '80%'}} ref={mymap => {
+                    this.mymap = mymap;
+                }}>
                     <TileLayer
                         attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
