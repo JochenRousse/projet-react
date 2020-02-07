@@ -1,5 +1,5 @@
-import React  from 'react'
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
+import React from 'react'
+import {Map, Marker, Popup, TileLayer} from 'react-leaflet'
 import PropTypes from "prop-types";
 
 export default class MovieMap extends React.Component {

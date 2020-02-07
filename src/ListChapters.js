@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {ListGroup} from "react-bootstrap";
 import CardColumns from "react-bootstrap/CardColumns";
 import Card from "react-bootstrap/Card";
 
