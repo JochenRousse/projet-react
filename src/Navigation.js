@@ -4,7 +4,7 @@ import Tab from "react-bootstrap/Tab";
 import {List} from "./ListChapters";
 import PropTypes from "prop-types";
 import MovieMap from "./MovieMap";
-import { Keywords } from "./Keywords";
+import {Keywords} from "./Keywords";
 
 
 export class Navigation extends React.Component {

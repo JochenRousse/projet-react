@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import PropTypes from "prop-types";
 import CardColumns from "react-bootstrap/CardColumns"
-import { Button } from "react-bootstrap";
+import {Button} from "react-bootstrap";
 
 export class Keywords extends React.Component {
     static propTypes = {
