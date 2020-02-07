@@ -4,6 +4,7 @@ import Tab from "react-bootstrap/Tab";
 import {List} from "./ListChapters";
 import PropTypes from "prop-types";
 import MovieMap from "./MovieMap";
+import { Keywords } from "./Keywords";
 
 
 export class Navigation extends React.Component {
@@ -26,6 +27,10 @@ export class Navigation extends React.Component {
                     <List chapters={this.props.data.Chapters} onClick={this.handleClick.bind(this)}/>
                 </Tab>
                 <Tab eventKey="mots" title="Mots clés">
+                    <Keywords keywords={this.props.data.Keywords} onClick={this.handleClick.bind(this)}/>
+                </Tab>
+                <Tab eventKey="chat" title="Chat">
+                    
                 </Tab>
             </Tabs>
 

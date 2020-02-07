@@ -6,7 +6,7 @@ export default class MovieMap extends React.Component {
     state = {
         lat: 38,
         lng: -97,
-        zoom: 2,
+        zoom: 4,
     };
 
     static propTypes = {
@@ -14,8 +14,8 @@ export default class MovieMap extends React.Component {
         onClick: PropTypes.func.isRequired
     };
 
-    handleClick(pos) {
-        this.props.onClick(pos);
+    handleClick(index, timestamp) {
+        this.props.onClick(timestamp);
     }
 
     componentDidMount() {
@@ -24,6 +24,18 @@ export default class MovieMap extends React.Component {
 
     render() {
         const position = [this.state.lat, this.state.lng];
+        const items = []
+
+        for (const [index, wp] of this.props.waypoints.entries()) {
+            items.push(
+                <Marker key={wp.label}  position={[wp.lat, wp.lng]} onClick={this.handleClick.bind(this, index, wp.timestamp)}>
+                    <Popup>
+                        {wp.label}
+                    </Popup>
+                </Marker>
+            )
+        }
+        
         return (
             <div className="pt-3 pb-3">
                 <Map center={position} zoom={this.state.zoom} style={{height: '350px', widht: '80%'}} ref={mymap => {
@@ -33,11 +45,7 @@ export default class MovieMap extends React.Component {
                         attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-                    <Marker position={position}>
-                        <Popup>
-                            A pretty CSS3 popup. <br /> Easily customizable.
-                        </Popup>
-                    </Marker>
+                    {items}
                 </Map>
             </div>
         )

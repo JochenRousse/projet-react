@@ -35,7 +35,7 @@ export class VideoPlayer extends React.Component {
             <section>
                 <Player ref={player => {
                     this.player = player;
-                }} playsInline>
+                }} playsInline fluid={false} height={400}>
                     <source src={this.props.data.Film.file_url}/>
                 </Player>
 
