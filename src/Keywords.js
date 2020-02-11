@@ -10,10 +10,6 @@ export class Keywords extends React.Component {
         currentTime: PropTypes.number.isRequired
     };
 
-    componentDidMount() {
-        console.log(this.props.currentTime); // print current time
-    }
-
     render() {
         return (
             <CardColumns key={this.props.currentTime} className="pt-3">

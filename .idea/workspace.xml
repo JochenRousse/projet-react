@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="975c03a0-6b6e-47df-92f4-b40af5099760" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatMessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Keywords.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keywords.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +78,7 @@
       <workItem from="1581089066242" duration="3409000" />
       <workItem from="1581153339416" duration="20000" />
       <workItem from="1581329155887" duration="71000" />
-      <workItem from="1581415121672" duration="3297000" />
+      <workItem from="1581415121672" duration="3386000" />
     </task>
     <task id="LOCAL-00001" summary="chapters / video ok">
       <created>1580807783059</created>
@@ -117,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581418809552</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="clean up code">
+      <created>1581419004403</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581419004403</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +133,8 @@
     <MESSAGE value="fix map" />
     <MESSAGE value="optimize imports" />
     <MESSAGE value="mots clés qui apparaissent selon le timestamp" />
-    <option name="LAST_COMMIT_MESSAGE" value="mots clés qui apparaissent selon le timestamp" />
+    <MESSAGE value="clean up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581418840178">
@@ -139,10 +145,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1580806229505" />
-    <state x="543" y="203" key="CommitChangelistDialog2" timestamp="1581418809425">
+    <state x="543" y="203" key="CommitChangelistDialog2" timestamp="1581419004317">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="543" y="203" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1581418809425" />
+    <state x="543" y="203" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1581419004317" />
     <state x="192" y="109" key="DiffContextDialog" timestamp="1581418795433">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -167,10 +173,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1920.1200@0.0.1920.1200" timestamp="1580803919380" />
-    <state x="560" y="340" key="Vcs.Push.Dialog.v2" timestamp="1581418811255">
+    <state x="560" y="340" key="Vcs.Push.Dialog.v2" timestamp="1581419005696">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1581418811255" />
+    <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1581419005696" />
     <state x="743" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581418872264">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
