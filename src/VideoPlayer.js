@@ -8,6 +8,10 @@ export class VideoPlayer extends React.Component {
         super(props, context);
 
         this.seek = this.seek.bind(this);
+
+        this.state = {
+            currentTime: 0
+        }
     }
 
     static propTypes = {
@@ -22,7 +26,8 @@ export class VideoPlayer extends React.Component {
     handleStateChange(state) {
         // copy player state to this component's state
         this.setState({
-            player: state
+            player: state,
+            currentTime: state.currentTime
         });
     }
 
@@ -42,9 +47,8 @@ export class VideoPlayer extends React.Component {
                 <h1>
                     {this.props.data.Film.title}
                 </h1>
-                <Navigation data={this.props.data} onClick={this.handleClick.bind(this)}/>
+                <Navigation data={this.props.data} currentTime={this.state.currentTime} onClick={this.handleClick.bind(this)}/>
             </section>
-
         )
     }
 

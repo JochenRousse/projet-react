@@ -7,25 +7,28 @@ import {Button} from "react-bootstrap";
 export class Keywords extends React.Component {
     static propTypes = {
         keywords: PropTypes.array.isRequired,
-        onClick: PropTypes.func.isRequired
+        currentTime: PropTypes.number.isRequired
     };
 
-    handleClick(index, pos) {
-        this.props.onClick(pos);
+    componentDidMount() {
+        console.log(this.props.currentTime); // print current time
     }
 
     render() {
         return (
-            <CardColumns className="pt-3">
+            <CardColumns key={this.props.currentTime} className="pt-3">
                 {this.props.keywords.map((item, index) => (
-                    item.data.map((item2, index2) => (
-                        <ListItemDetails
-                            title={item2.title}
-                            key={item2.title}
-                            onClick={this.handleClick.bind(this, item2.title, item.pos)}
-                            url={item2.url}/>
+                    // eslint-disable-next-line array-callback-return
+                    item.data.map((item2, index2) => {
+                            if (item.pos > this.props.currentTime - 15 && item.pos < this.props.currentTime + 15) {
+                                return <ListItemDetails
+                                    title={item2.title}
+                                    key={item2.title}
+                                    url={item2.url}/>
+                            }
+                        }
                     ))
-                ))}
+                )}
             </CardColumns>
         )
     }
@@ -36,12 +39,7 @@ export class ListItemDetails extends React.Component {
 
     static propTypes = {
         title: PropTypes.string.isRequired,
-        url: PropTypes.string.isRequired,
-        onClick: PropTypes.func.isRequired,
-    };
-
-    toggle = () => {
-        this.props.onClick(this)
+        url: PropTypes.string.isRequired
     };
 
     render() {
@@ -50,7 +48,6 @@ export class ListItemDetails extends React.Component {
                 <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>
                     <Button href={this.props.url} target="blank">Plus d'infos</Button>
-                    <Button className="ml-3" onClick={this.toggle}>Aller au timer</Button>
                 </Card.Body>
             </Card>
         )

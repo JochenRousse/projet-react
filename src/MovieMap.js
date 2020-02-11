@@ -24,7 +24,7 @@ export default class MovieMap extends React.Component {
 
     render() {
         const position = [this.state.lat, this.state.lng];
-        const items = []
+        const items = [];
 
         for (const [index, wp] of this.props.waypoints.entries()) {
             items.push(

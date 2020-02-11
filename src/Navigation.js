@@ -10,7 +10,8 @@ import {Keywords} from "./Keywords";
 export class Navigation extends React.Component {
     static propTypes = {
         data: PropTypes.object.isRequired,
-        onClick: PropTypes.func.isRequired
+        onClick: PropTypes.func.isRequired,
+        currentTime: PropTypes.number.isRequired
     };
 
     handleClick(pos) {
@@ -27,7 +28,7 @@ export class Navigation extends React.Component {
                     <List chapters={this.props.data.Chapters} onClick={this.handleClick.bind(this)}/>
                 </Tab>
                 <Tab eventKey="mots" title="Mots clés">
-                    <Keywords keywords={this.props.data.Keywords} onClick={this.handleClick.bind(this)}/>
+                    <Keywords key={this.props.currentTime} currentTime={this.props.currentTime} keywords={this.props.data.Keywords}/>
                 </Tab>
                 <Tab eventKey="chat" title="Chat">
                     
