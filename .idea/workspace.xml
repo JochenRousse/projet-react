@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="975c03a0-6b6e-47df-92f4-b40af5099760" name="Default Changelist" comment="optimize imports">
+    <list default="true" id="975c03a0-6b6e-47df-92f4-b40af5099760" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Keywords.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keywords.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MovieMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VideoPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/VideoPlayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChatInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChatMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatMessage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,7 @@
       <workItem from="1581089066242" duration="3409000" />
       <workItem from="1581153339416" duration="20000" />
       <workItem from="1581329155887" duration="71000" />
-      <workItem from="1581415121672" duration="3101000" />
+      <workItem from="1581415121672" duration="3297000" />
     </task>
     <task id="LOCAL-00001" summary="chapters / video ok">
       <created>1580807783059</created>
@@ -111,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581094393124</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="mots clés qui apparaissent selon le timestamp">
+      <created>1581418809552</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581418809552</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,21 +127,26 @@
     <MESSAGE value="chapters / video ok" />
     <MESSAGE value="fix map" />
     <MESSAGE value="optimize imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimize imports" />
+    <MESSAGE value="mots clés qui apparaissent selon le timestamp" />
+    <option name="LAST_COMMIT_MESSAGE" value="mots clés qui apparaissent selon le timestamp" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="424" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581418840178">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="424" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1581418840178" />
     <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580806229505">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1580806229505" />
-    <state x="543" y="203" key="CommitChangelistDialog2" timestamp="1581415145487">
+    <state x="543" y="203" key="CommitChangelistDialog2" timestamp="1581418809425">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="543" y="203" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1581415145487" />
-    <state x="192" y="109" key="DiffContextDialog" timestamp="1581415145273">
+    <state x="543" y="203" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1581418809425" />
+    <state x="192" y="109" key="DiffContextDialog" timestamp="1581418795433">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="192" y="109" key="DiffContextDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1581415145273" />
+    <state x="192" y="109" key="DiffContextDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1581418795433" />
     <state width="1878" height="344" key="GridCell.Tab.0.bottom" timestamp="1581418161831">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -156,14 +167,14 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1920.1200@0.0.1920.1200" timestamp="1580803919380" />
-    <state x="560" y="340" key="Vcs.Push.Dialog.v2" timestamp="1581094394297">
+    <state x="560" y="340" key="Vcs.Push.Dialog.v2" timestamp="1581418811255">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1581094394297" />
-    <state x="743" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581094358810">
+    <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1581418811255" />
+    <state x="743" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581418872264">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="743" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1200@0.0.1920.1200" timestamp="1581094358810" />
+    <state x="743" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1200@0.0.1920.1200" timestamp="1581418872264" />
     <state x="618" y="357" width="683" height="486" key="find.popup" timestamp="1581415365040">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
