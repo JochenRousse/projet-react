@@ -18,7 +18,7 @@ export class Fetcher extends React.Component {
         if (data_loaded) {
             return (
                 <Container>
-                    <VideoPlayer data={data}/>
+                    <VideoPlayer data={data} id="videoPlayer"/>
                 </Container>
             );
         } else {
