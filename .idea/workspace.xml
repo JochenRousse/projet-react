@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="975c03a0-6b6e-47df-92f4-b40af5099760" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fetcher.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fetcher.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,8 @@
       <workItem from="1581419696588" duration="336000" />
       <workItem from="1581425187430" duration="351000" />
       <workItem from="1581688938184" duration="213000" />
-      <workItem from="1581691593218" duration="2143000" />
+      <workItem from="1581691593218" duration="2515000" />
+      <workItem from="1581870323140" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="chapters / video ok">
       <created>1580807783059</created>
@@ -147,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581698488644</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="cleanup">
+      <created>1581699400030</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581699400030</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +169,8 @@
     <MESSAGE value="clean up code" />
     <MESSAGE value="oubli console log" />
     <MESSAGE value="Début test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Début test" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581418840178">
@@ -172,14 +181,14 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1580806229505" />
-    <state x="543" y="203" key="CommitChangelistDialog2" timestamp="1581698488408">
+    <state x="543" y="203" key="CommitChangelistDialog2" timestamp="1581699399921">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="543" y="203" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1581698488408" />
-    <state x="192" y="109" key="DiffContextDialog" timestamp="1581698483108">
+    <state x="543" y="203" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1581699399921" />
+    <state x="192" y="109" key="DiffContextDialog" timestamp="1581699395997">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="192" y="109" key="DiffContextDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1581698483108" />
+    <state x="192" y="109" key="DiffContextDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1581699395997" />
     <state width="1878" height="344" key="GridCell.Tab.0.bottom" timestamp="1581418161831">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -200,10 +209,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1920.1200@0.0.1920.1200" timestamp="1580803919380" />
-    <state x="560" y="340" key="Vcs.Push.Dialog.v2" timestamp="1581698490352">
+    <state x="560" y="340" key="Vcs.Push.Dialog.v2" timestamp="1581699402080">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1581698490352" />
+    <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1581699402080" />
     <state x="743" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581418872264">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>

@@ -146,18 +146,12 @@ test("does not contains player after initial render", () => {
     expect(player).toBeNull();
 });
 
+// Error because leaflet is not mocked properly
 test("contains player after async fetch", async () => {
     const {container} = render(<Fetcher/>);
     const player = await waitForElement(() =>
         container.querySelector(`[id="videoPlayer"]`));
     expect(player).toBeInTheDocument();
-});
-
-test("section is a section tag after async fetch", async () => {
-    const {container} = render(<Fetcher/>);
-    const player = await waitForElement(() =>
-        container.querySelector(`[id="videoPlayer"]`));
-    expect(player.nodeName).toBe("VIDEOPLAYER");
 });
 
 afterAll(() => {
